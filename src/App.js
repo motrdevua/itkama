@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Components/Header.jsx';
-import Navbar from './Components/Navbar.jsx';
-import Content from './Components/Content.jsx';
-import Footer from './Components/Footer.jsx';
+import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+import Content from './Components/Content/Content';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (

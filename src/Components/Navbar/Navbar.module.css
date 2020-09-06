@@ -1,0 +1,28 @@
+.navbar {
+  display: grid;
+  background-color: #53c1de;
+
+  grid-area: navbar;
+}
+
+.list__item {
+  list-style-type: none;
+}
+
+.list__item a {
+  color: seashell;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.list__item a:hover {
+  color: darkslategrey;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.active a {
+  color: darkslategrey;
+}
