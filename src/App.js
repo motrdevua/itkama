@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
-// import Posts from './Components/Posts/Posts';
+import Posts from './Components/Posts/Posts';
 import Footer from './Components/Footer/Footer';
-import Dialogs from './Components/Dialogs/Dialogs';
+import Messages from './Components/Messages/Messages';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Navbar />
       <main className="content">
-        {/* <Posts /> */}
-        <Dialogs />
+        <Posts />
+        <Messages />
       </main>
       <Footer />
     </div>

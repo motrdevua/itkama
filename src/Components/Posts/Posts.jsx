@@ -6,7 +6,7 @@ const Posts = () => (
   <div className={s.posts}>
     <h2 className={s.title}>posts</h2>
     <div className={s.textarea}>
-      <textarea name="" id="" cols="50" rows="5" />
+      <textarea name="" id="" />
       <button type="button">Add post</button>
     </div>
     <Post name="John Doe" message="some text..." likes="15" />

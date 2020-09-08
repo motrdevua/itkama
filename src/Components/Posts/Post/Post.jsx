@@ -20,7 +20,6 @@ const Post = (props) => {
       </div>
       <div className={s.like}>
         <span className={s.like__button}>
-          <span>like</span>
           <Like />
         </span>
         <span className={s.like__counter}>{likes}</span>

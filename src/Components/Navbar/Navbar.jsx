@@ -5,22 +5,22 @@ const Navbar = () => (
   <nav className={s.navbar}>
     <ul className={s.list}>
       <li className={`${s.list__item} ${s.active}`}>
-        <a href="Profile" className={s.list__link}>
+        <a href="/profile" className={s.list__link}>
           Profile
         </a>
       </li>
       <li className={s.list__item}>
-        <a href="Messages" className={s.list__link}>
+        <a href="/messages" className={s.list__link}>
           Messages
         </a>
       </li>
       <li className={s.list__item}>
-        <a href="News" className={s.list__link}>
+        <a href="/news" className={s.list__link}>
           News
         </a>
       </li>
       <li className={s.list__item}>
-        <a href="Settings" className={s.list__link}>
+        <a href="/settings" className={s.list__link}>
           Settings
         </a>
       </li>
