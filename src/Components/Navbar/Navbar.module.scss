@@ -1,23 +1,23 @@
 .navbar {
   display: grid;
   padding: 15px;
-  background-color: #53c1de;
+  background-color: rgba(0, 191, 255, 1);
 
   grid-area: navbar;
 }
 
 .list {
   &__item {
-    list-style-type: none;
     padding: 5px 0;
+    list-style-type: none;
 
     & a {
       color: seashell;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: 18px;
       -webkit-transition: all .2s ease-in-out;
               transition: all .2s ease-in-out;
-      font-size: 18px;
       &:hover {
         color: darkslategrey;
         -webkit-transition: all .2s ease-in-out;
@@ -27,6 +27,6 @@
   }
 
   a.active {
-    color: darkslategrey;
+    color: #434d56;
   }
 }

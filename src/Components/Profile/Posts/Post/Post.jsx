@@ -5,7 +5,7 @@ import ava from './ava.png';
 import Like from './Like';
 
 const Post = (props) => {
-  const { name, message, likes } = props;
+  const { name, text, likes } = props;
 
   return (
     <div className={s.post}>
@@ -15,7 +15,7 @@ const Post = (props) => {
         </div>
         <div className={s.content}>
           <p className={s.name}>{name}</p>
-          <p className={s.text}>{message}</p>
+          <p className={s.text}>{text}</p>
         </div>
       </div>
       <div className={s.like}>

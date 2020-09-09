@@ -22,6 +22,7 @@ code {
 .App {
   display: grid;
   min-height: 100%;
+  color: #434d56;
   /* grid-gap: 0 10px; */
 
   grid-template-areas: 'header header' 'navbar content' 'footer footer';
