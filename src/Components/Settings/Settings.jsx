@@ -3,7 +3,7 @@ import s from './Settings.module.scss';
 
 const Settings = () => (
   <div className={s.settings}>
-    Settings
+    <h2 className={s.title}>Settings</h2>
   </div>
 );
 

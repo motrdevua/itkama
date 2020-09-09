@@ -3,7 +3,7 @@ import s from './Profile.module.scss';
 
 const Profile = () => (
   <div className={s.profile}>
-    Profile
+    <h2 className={s.title}>Profile</h2>
   </div>
 );
 

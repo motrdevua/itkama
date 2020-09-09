@@ -15,8 +15,8 @@ function App() {
         <Header />
         <Navbar />
         <main className="content">
-          <Route component={Posts} path="/posts" />
           <Route component={Profile} path="/profile" />
+          <Route component={Posts} path="/posts" />
           <Route component={News} path="/news" />
           <Route component={Settings} path="/settings" />
         </main>

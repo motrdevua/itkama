@@ -9,6 +9,7 @@
 .list {
   &__item {
     list-style-type: none;
+    padding: 5px 0;
 
     & a {
       color: seashell;
@@ -16,6 +17,7 @@
       text-transform: uppercase;
       -webkit-transition: all .2s ease-in-out;
               transition: all .2s ease-in-out;
+      font-size: 18px;
       &:hover {
         color: darkslategrey;
         -webkit-transition: all .2s ease-in-out;
@@ -24,7 +26,7 @@
     }
   }
 
-  .active a {
+  a.active {
     color: darkslategrey;
   }
 }
