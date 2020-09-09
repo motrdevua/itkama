@@ -11,8 +11,8 @@ const Navbar = () => (
         </NavLink>
       </li>
       <li className={s.list__item}>
-        <NavLink to="/posts" className={s.list__link} activeClassName={s.active}>
-          Posts
+        <NavLink to="/dialogs" className={s.list__link} activeClassName={s.active}>
+          Dialogs
         </NavLink>
       </li>
       <li className={s.list__item}>
