@@ -10,8 +10,8 @@ const Navbar = () => (
         </a>
       </li>
       <li className={s.list__item}>
-        <a href="/messages" className={s.list__link}>
-          Messages
+        <a href="/posts" className={s.list__link}>
+          Posts
         </a>
       </li>
       <li className={s.list__item}>

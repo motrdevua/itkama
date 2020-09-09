@@ -1,21 +1,28 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import Posts from './Components/Posts/Posts';
-import Footer from './Components/Footer/Footer';
-import Messages from './Components/Messages/Messages';
+import Profile from './Components/Profile/Profile';
+import News from './Components/News/News';
+import Settings from './Components/Settings/Settings';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <main className="content">
-        <Posts />
-        <Messages />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Navbar />
+        <main className="content">
+          <Route component={Posts} path="/posts" />
+          <Route component={Profile} path="/profile" />
+          <Route component={News} path="/news" />
+          <Route component={Settings} path="/settings" />
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
