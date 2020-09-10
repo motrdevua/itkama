@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .title {
   padding: 0 0 15px 0;
   text-transform: uppercase;
@@ -12,10 +14,9 @@
 
     grid-template-columns: 1fr 3fr;
   }
-}
-
-.messages {
-  padding: 0 0 0 15px;
+  &__items {
+    padding: 0 15px 0 0;
+  }
 }
 
 .message {
@@ -29,48 +30,33 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
   padding: 15px;
   border-radius: 15px;
-  background-color: #e6f9ff;
+  background-color: rgba($mainColor, .1);
   cursor: pointer;
-  &:after {
-    position: absolute;
-    top: 65%;
-    bottom: 15px;
-    left: 15px;
-    z-index: -1;
-    max-width: 300px;
-    width: 50%;
-    background: rgba(230, 249, 255, 1);
-    -webkit-box-shadow: 0 10px 15px rgba(0, 191, 255, 1);
-            box-shadow: 0 10px 15px rgba(0, 191, 255, 1);
-    content: '';
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
-
   &__text {
     font-size: 18px;
   }
 }
 
 .dialog {
-  margin: 5px 0;
-  padding: 8px 5px 8px 10px;
+  position: relative;
+  margin: 0 0 5px 0;
+  padding: 5px 5px 5px 15px;
   border-radius: 5px;
-  -webkit-box-shadow: -5px 5px 10px -5px #ccf2ff, inset 5px -5px 10px -5px #ffffff;
-          box-shadow: -5px 5px 10px -5px #ccf2ff, inset 5px -5px 10px -5px #ffffff;
+  background-color: rgba($mainColor, .75);
   font-size: 18px;
   line-height: 130%;
   cursor: pointer;
   -webkit-transition: all .2s linear;
           transition: all .2s linear;
-  &:hover {
-    // background-color: #e6f9ff80;
-    -webkit-box-shadow: -5px 5px 10px -5px #ffffff, inset 5px -5px 10px -5px #ccf2ff;
-            box-shadow: -5px 5px 10px -5px #ffffff, inset 5px -5px 10px -5px #ccf2ff;
+  &:hover &__name {
+    color: $dark1;
     -webkit-transition: all .2s linear;
             transition: all .2s linear;
+  }
+  &__name {
+    color: $light1;
   }
 }

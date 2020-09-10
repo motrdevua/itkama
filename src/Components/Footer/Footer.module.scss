@@ -1,5 +1,6 @@
+@import '../../variables.scss';
 .footer {
-  background-color: slategray;
+  background-color: $mainColor;
 
   grid-area: footer;
 }

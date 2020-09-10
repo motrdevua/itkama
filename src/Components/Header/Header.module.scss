@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,7 +10,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  background-color: slategray;
+  background-color: $mainColor;
 
   grid-area: header;
 }

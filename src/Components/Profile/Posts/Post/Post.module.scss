@@ -1,3 +1,4 @@
+@import '../../../../variables.scss';
 .post {
   position: relative;
   display: -webkit-box;
@@ -10,34 +11,28 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 15px 0;
-  padding: 15px;
+  padding: 10px 15px 10px 10px;
   border-radius: 15px;
-  background-color: #e6f9ff;
-  &:after {
-    position: absolute;
-    top: 80%;
-    bottom: 15px;
-    left: 15px;
-    z-index: -1;
-    max-width: 300px;
-    width: 50%;
-    background: rgba(230, 249, 255, 1);
-    -webkit-box-shadow: 0 10px 15px rgba(0, 191, 255, 1);
-            box-shadow: 0 10px 15px rgba(0, 191, 255, 1);
-    content: '';
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
+  background-color: rgba($mainColor, .1);
 }
 
 .ava {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   & img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: #cccccc;
+    background-color: rgba($mainColor, .3);
   }
 }
 
@@ -75,7 +70,7 @@
 
 .name {
   padding: 0 0 7px 0;
-  color: rgba(0, 191, 255, 1);
+  color: $mainColor;
   font-weight: bold;
 }
 
@@ -106,8 +101,8 @@
     justify-content: flex-start;
     padding: 5px;
     border-radius: 50%;
-    background: rgba(0, 191, 255, 1);
-    color: #ffffff;
+    background: $mainColor;
+    color: $light1;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
@@ -117,9 +112,7 @@
               transition: all .2s ease-in-out;
     }
     &:hover {
-      background: #ffffff;
-      -webkit-box-shadow: 0 -1px 21px -5px rgba(0, 191, 255, .75);
-              box-shadow: 0 -1px 21px -5px rgba(0, 191, 255, .75);
+      background: $light1;
       -webkit-transition: all .3s ease-in-out;
               transition: all .3s ease-in-out;
     }
@@ -138,7 +131,7 @@
       fill: #ffffff;
     }
     &:active, &:focus {
-      background: rgb(255, 0, 128);
+      background: rgba($color4, 1);
       -webkit-transition: all .2s ease-in-out;
               transition: all .2s ease-in-out;
     }
@@ -159,8 +152,8 @@
     width: 20px;
     height: 20px;
     border-radius: 5px;
-    background: deepskyblue;
-    color: #ffffff;
+    background: $mainColor;
+    color: $light1;
     font-size: 13px;
   }
 }
