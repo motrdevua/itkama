@@ -42,21 +42,28 @@
 
 .dialog {
   position: relative;
-  margin: 0 0 5px 0;
-  padding: 5px 5px 5px 15px;
-  border-radius: 5px;
-  background-color: rgba($mainColor, .75);
-  font-size: 18px;
-  line-height: 130%;
-  cursor: pointer;
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-  &:hover &__name {
-    color: $dark1;
+
+  &__name {
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+    background-color: rgba($mainColor, .75);
+    color: $light1;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 130%;
+    cursor: pointer;
     -webkit-transition: all .2s linear;
             transition: all .2s linear;
+    &:hover {
+      color: $dark1;
+      -webkit-transition: all .2s linear;
+              transition: all .2s linear;
+    }
   }
-  &__name {
-    color: $light1;
-  }
+}
+
+.active {
+  color: $dark1;
 }
