@@ -1,0 +1,17 @@
+@import '../../../variables.scss';
+
+.message {
+  position: relative;
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba($mainColor, .1);
+  cursor: pointer;
+  &__text {
+    font-size: 18px;
+  }
+}
